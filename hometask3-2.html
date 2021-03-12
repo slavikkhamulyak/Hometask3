@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const countProps = function(obj) {
+  // твой код
+  const result = Object.values(obj);
+  return result.length;
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(countProps({})); // 0
+
+console.log(countProps({ name: 'Mango', age: 2 })); // 2
+
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
+  </script>
+</body>
+</html>
